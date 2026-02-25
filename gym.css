@@ -1,0 +1,256 @@
+ * { margin: 0;
+   padding: 0; 
+  box-sizing: border-box; 
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #e8eb1c;
+      color: #333;
+    }
+
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      color: rgb(22, 21, 21);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links li a {
+      color: #0e0e0d;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #ff0000;
+    }
+
+    /* Hamburger menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      width: 28px;
+      height: 3px;
+      background: rgb(22, 21, 21);
+      transition: 0.3s;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 220px;
+        height: 100vh;
+        background: #f3f1f1;
+        flex-direction: column;
+        padding-top: 40px;
+        gap: 20px;
+        transition: 0.4s;
+      }
+
+      .nav-links.open {
+        right: 0;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+    /* Hero */
+    .hero {
+      
+      /* background: url('https://images.unsplash.com/photo-1599058917212-9a3c6e3a3c6f') no-repeat center center/cover; */
+      color: black; text-align: center; 
+      /* padding: 100px 20px; */
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      width: 100%;
+      /* height: max-content; */
+      /* z-index: 2;
+      position: absolute; */
+    }
+    .vin{
+        z-index: 1;
+        position: relative;
+        top: -300px;
+        color: white;
+      
+    }
+    #p1{
+      padding-top: 0%;
+    }
+    .hero h2 { font-size: 2.5rem;
+          
+
+
+    }
+    
+    .hero button {
+      margin-top: 10px; 
+      padding: 10px 20px;
+      background:  #e8eb1c; border: none; color: #1a1919;
+      cursor: pointer; transition: background 0.3s;
+      border-radius: 5px;
+    }
+    .hero button:hover { background: #e63939; }
+
+    /* Motivation */
+    .motivation {
+      background: #fff;
+      padding: 60px;
+      text-align: center;
+      color: #444;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      /* transform: translateY(-30%); */
+      
+    }
+    .f1{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    /* Services */
+    .services {
+      width: 100%;
+       padding: 50px 20px;
+        text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     /* transform: translateY(-30%); */
+     /* background-color: #e63939; */
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+    }
+    .service-container {
+      width: 100%;
+      height: max-content;
+      display: flex;
+       justify-content: space-around; 
+       /* background-color: aqua; */
+      /* margin-top: 20px; */
+    
+    
+    }
+    .service {
+      background: #f1f1f3; 
+      padding: 20px; border-radius: 8px;
+      width:400px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    #m1{
+      padding-bottom: 2%;
+    }
+    .service h3 { margin: 10px 0; color: #ff4c4c; }
+    .service img { margin-bottom: 10px; }
+    #r1{
+      padding-bottom: 2%;
+    }
+
+    @media (max-width:480px)
+    {
+     .service-container{ 
+      width: 100%;
+      height: 900px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        /* background-color:blue ; */
+        /* transform: translateY(-5%); */
+      
+        
+
+      }
+      .services{
+          transform: translateY(-20%);
+      }
+        .service {
+        width: 100%;
+      background: #fbfdfa; 
+    }
+      .motivation {
+
+      transform: translateY(-65%);
+      
+    }
+  }
+    /* Gallery */
+    .gallery { padding: 30px 3px; text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    /* transform: translateY(-20%); */
+   }
+    .gallery-container {
+      display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;
+    }
+    .gallery-container img {  
+      width: 300px; border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    /* Fees */
+    .fees { padding: 50px 20px; text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    /* transform: translateY(-40%); */
+    }
+    #e1{
+      padding-bottom: 2%;
+    }
+    .fees table {
+      width: 80%; margin: auto; border-collapse: collapse;
+    }
+    .fees th, .fees td {
+      border: 1px solid #0c0c0c; padding: 10px;
+    }
+    .fees th { background: #111; color: #fff; }
+
+    /* Contact */
+    .contact
+     { 
+       text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* transform: translateY(-40%); */
+     background-image:url(./);
+     background-repeat: no-repeat;
+     
+     
+
+    }
+    #c1{
+       padding-bottom: 2%;
+    }
+
+    .contact form {
+      display: flex; flex-direction: column;
+      width: 300px; margin: auto;
+    }
+    .contact input, .contact textarea {
+      margin: 10px 0; padding: 10px;
+    }
+    .contact button {
+      background: #111; color: #fff; border: none;
+      padding: 10px; cursor: pointer;
+    }
+    .contact button:hover { background: #ff4c4c; }
+
+    /* Footer */
+    footer {
+      background: #111; color: #fff;
+      text-align: center; padding: 10px;
+    }

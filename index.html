@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerHouse Fitness</title>
+  <link rel="stylesheet" href="./gym.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+        <nav class="navbar">
+      <h1 class="logo">PowerHouse Fitness</h1>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#motivation">Motivation</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#fees">Fees</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <img src="./gif.gif" alt="" width="100%" height="600px" >
+    <div class="vin">
+       <h2>Transform Your Body, Transform Your Life</h2>
+    <p id="p1">“The pain you feel today will be the strength you feel tomorrow.”</p>
+    <button onclick="joinNow()">Join Now</button>
+  
+
+    </div>
+   
+  </section>
+
+  <!-- Motivation -->
+  <section id="motivation" class="motivation">
+    <h2>Stay Motivated </h2>
+    <p>“Push yourself, because no one else is going to do it for you.”</p>
+    <p>“Success starts with self-discipline.”</p>
+    <p>“Don’t limit your challenges, challenge your limits.”</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2 id="r1">Our Services</h2>
+    <div class="service-container">
+      <div class="service">
+        <img src="https://th.bing.com/th/id/OIP.cRnmZ-CWdkiNfByso3frIwHaE8?w=241&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Dumbbell" width="50%">
+        <h3>Personal Training</h3>
+        <p>One-on-one sessions tailored to your goals.</p>
+      </div>
+      <div class="service">
+        <img src="https://th.bing.com/th/id/OIP.EodcOQWLv7khKXbOvN3SkwHaE7?w=272&h=181&c=7&r=0&o=7&pid=1.7&rm=3" alt="Yoga" width="50%">
+        <h3>Group Classes</h3>
+        <p>HIIT, Yoga, Zumba, and more fun workouts.</p>
+      </div>
+      <div class="service">
+        <img src="https://th.bing.com/th/id/OIP.QAsXDy5e7uYiMGSIt6ZSnwHaEJ?w=271&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Nutrition" width="50%">
+        <h3>Nutrition Guidance</h3>
+        <p>Meal plans and advice to fuel your progress.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <h2 id="m1">Our Gym</h2>
+    <div class="gallery-container">
+      <img src="https://png.pngtree.com/thumb_back/fw800/background/20241102/pngtree-modern-gym-interior-image_16492627.jpg" alt="Gym Interior">
+      <img src="https://nordicfitnesseducation.net/wp-content/uploads/2022/08/trainer-making-an-exercise-plan-for-young-man-2021-09-04-09-07-01-utc-1-1024x700.jpg" alt="Trainer">
+      <img src="https://png.pngtree.com/background/20230614/original/pngtree-black-and-white-gym-room-with-a-row-of-equipment-picture-image_3485114.jpg" alt="Equipment">
+      <img src="https://img.freepik.com/premium-photo/group-athletes-exercising-gym_873069-5283.jpg" alt="pre-workout">
+      <img src="https://th.bing.com/th/id/OIP.lQaIFa4C5r1ZmD0THrcgcAHaFE?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Gym mechine">
+      <img src="https://wallpapers.com/images/hd/muscular-man-doing-strength-training-u0kokyhqhdmh8644.jpg" alt="power workout">
+      <img src="https://images.unsplash.com/photo-1723117418183-2422c62a5a75?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3ltfGVufDB8fDB8fHww" alt="Gym workout">
+    </div>
+  </section>
+
+  <!-- Fees -->
+  <section id="fees" class="fees">
+    <h2 id="e1">Membership Plans</h2>
+    <table>
+      <tr>
+        <th>Plan</th>
+        <th>Price (per month)</th>
+        <th>Features</th>
+      </tr>
+      <tr>
+        
+        <td><b>Basic</b></td>
+        <td><b>₹1000</b></td>
+        <td><b>Gym access, locker facilities</b></td>
+        </b>
+      
+      <tr>
+        <td><b>Standard</b></td>
+        <td><b>₹2000</b></td>
+        <td><b>+ Group classes</b></td>
+      </tr>
+      <tr>
+        <td><b>Premium</b></td>
+        <td><b>₹3500</b></td>
+        <td><b>+ Personal training & nutrition</b></td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2 id="c1">Contact Us</h2>
+    <p>  Address: 123 Fitness Street, Srirangam, TN, India</p>
+    <p> Phone: +91 98765 43210</p>
+    <p>Email: powerhouse1000@gmail.com</p>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+    <script src="./gym.js">
+</script>
+</body>
+</html>
